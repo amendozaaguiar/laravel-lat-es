@@ -1,10 +1,10 @@
 <?php
 
-namespace Amendozaaguiar\Lates;
+namespace Amendozaaguiar\LaravelLatEs;
 
 use Illuminate\Support\ServiceProvider;
 
-class LatesServiceProvider extends ServiceProvider
+class LaravelLatEsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -17,7 +17,7 @@ class LatesServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Commands\InstallLates::class,
+                Commands\InstallLaravelLatEs::class,
             ]);
         }
     }

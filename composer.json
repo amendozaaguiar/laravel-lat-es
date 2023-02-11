@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amendozaaguiar\\Laravel-lat-es\\LatesServiceProvider"
+                "Amendozaaguiar\\Laravel-lat-es\\LaravelLatEsServiceProvider"
             ]
         }
     }
