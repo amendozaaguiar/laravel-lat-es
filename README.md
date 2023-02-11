@@ -1,5 +1,5 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/laraveles/spanish.svg?style=flat-square)](https://packagist.org/packages/laraveles/spanish)
-[![Total Downloads](https://img.shields.io/packagist/dt/laraveles/spanish.svg?style=flat-square)](https://packagist.org/packages/laraveles/spanish)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/amendozaaguiar/lates.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/lates)
+[![Total Downloads](https://img.shields.io/packagist/dt/amendozaaguiar/lates.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/lates)
 
 # Laravel Español 9, 10
 
