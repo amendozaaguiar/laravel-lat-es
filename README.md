@@ -3,14 +3,13 @@
 
 # Laravel Español 9, 10
 
-Paquete de traducciones en español para Laravel 9, 10. Este paquete te agrega a tu proyecto los ficheros de traducciones en español que Laravel 9, 10 trae por defecto.
+El paquete "laravel-lat-es" ofrece traducciones en español para Laravel 9 y 10, permitiendo que tus proyectos en Laravel cuenten con los archivos de traducción en español por defecto. Con este paquete, podrás asegurarte de tener una experiencia de usuario en español más fluida y personalizada en tus aplicaciones de Laravel. Además, al utilizar las traducciones por defecto de Laravel, podrás estar seguro de estar utilizando un idioma consistente y coherente a lo largo de toda tu aplicación.
 
 ## Versiones
 
 Archivos por defecto incluidos en Laravel:
 
 ```
-es.json
 es/auth.php
 es/passwords.php
 es/pagination.php
@@ -83,8 +82,8 @@ App::setLocale('es');
 
 ## Colaborar
 
-Mejoras y otras variaciones de paises de habla hispana son más que bienvenidas. Cualquier aportación vía Pull-Request ;D
+Estamos abiertos a mejoras y variaciones para países de habla hispana. ¡Aceptamos cualquier contribución a través de una solicitud de extracción (Pull-Request) con entusiasmo! :D
 
 ## Inspirado
 
-Inspirado en Laravel-Spanish
+Agradecemos la inspiración de Laravel-Spanish y agradecemos a ChatGPT por su contribución en la mejora de los textos.
