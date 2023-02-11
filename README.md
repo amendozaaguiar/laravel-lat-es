@@ -1,5 +1,5 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/amendozaaguiar/lates.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/lates)
-[![Total Downloads](https://img.shields.io/packagist/dt/amendozaaguiar/lates.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/lates)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/amendozaaguiar/laravel-lat-es.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/laravel-lat-es)
+[![Total Downloads](https://img.shields.io/packagist/dt/amendozaaguiar/laravel-lat-es.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/laravel-lat-es)
 
 # Laravel Español 9, 10
 
@@ -27,7 +27,7 @@ es/validation.php
 Puedes instalar este paquete mediante composer:
 
 ```bash
-composer require amendozaaguiar/lates
+composer require amendozaaguiar/laravel-lat-es
 ```
 
 No es necesario agregar el proveedor de servicios en tu fichero `config/app.php` en Laravel 5.5+ gracias al [sistema de autodiscovery](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518):
@@ -35,7 +35,7 @@ No es necesario agregar el proveedor de servicios en tu fichero `config/app.php`
 ```php
 'providers' => [
     // ...
-    Amendozaaguiar\Lates\LatesServiceProvider::class,
+    Amendozaaguiar\Laravel-lat-es\LatesServiceProvider::class,
 ];
 ```
 

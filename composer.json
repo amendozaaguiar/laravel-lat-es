@@ -1,5 +1,5 @@
 {
-    "name": "amendozaaguiar/lates",
+    "name": "amendozaaguiar/laravel-lat-es",
     "description": "Paquete de traducciones en español para Laravel 9, 10. Este paquete te agrega a tu proyecto los ficheros de traducciones en español que Laravel 9, 10 trae por defecto.",
     "keywords": [
         "laravel",
@@ -8,12 +8,12 @@
         "spanish",
         "translation"
     ],
-    "homepage": "https://github.com/amendozaaguiar/lates",
+    "homepage": "https://github.com/amendozaaguiar/laravel-lat-es",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amendozaaguiar\\Lates\\": "src/"
+            "Amendozaaguiar\\Laravel-lat-es\\": "src/"
         }
     },
     "authors": [
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amendozaaguiar\\Lates\\LatesServiceProvider"
+                "Amendozaaguiar\\Laravel-lat-es\\LatesServiceProvider"
             ]
         }
     }
