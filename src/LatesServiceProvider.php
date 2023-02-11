@@ -13,7 +13,7 @@ class LatesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__ . '/../resources/lang' => base_path('/Lang'),], 'lang');
+        $this->publishes([__DIR__ . '/../resources/lang' => base_path('/lang'),], 'lang');
 
         if ($this->app->runningInConsole()) {
             $this->commands([
