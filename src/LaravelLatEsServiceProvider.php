@@ -1,6 +1,6 @@
 <?php
 
-namespace Amendozaaguiar\LaravelLatEs;
+namespace Amendozaaguiar\Laravellates;
 
 use Illuminate\Support\ServiceProvider;
 

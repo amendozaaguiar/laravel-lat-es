@@ -1,6 +1,6 @@
 <?php
 
-namespace Amendozaaguiar\LaravelLatEs\Commands;
+namespace Amendozaaguiar\Laravellates\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
