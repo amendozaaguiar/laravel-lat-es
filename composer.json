@@ -28,6 +28,7 @@
         "illuminate/support": ">=5.4.0",
         "illuminate/console": ">=5.4.0"
     },
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
