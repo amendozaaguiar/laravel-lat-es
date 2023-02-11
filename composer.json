@@ -8,6 +8,7 @@
         "spanish",
         "translation"
     ],
+    "homepage": "https://github.com/amendozaaguiar/lates",
     "type": "library",
     "license": "MIT",
     "autoload": {
