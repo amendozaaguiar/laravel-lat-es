@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amendozaaguiar\\Laravel-lat-es\\": "src/"
+            "Amendozaaguiar\\LaravelLatEs\\": "src/"
         }
     },
     "authors": [
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amendozaaguiar\\Laravel-lat-es\\LaravelLatEsServiceProvider"
+                "Amendozaaguiar\\LaravelLatEs\\LaravelLatEsServiceProvider"
             ]
         }
     }

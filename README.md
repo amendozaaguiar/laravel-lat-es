@@ -34,7 +34,7 @@ No es necesario agregar el proveedor de servicios en tu fichero `config/app.php`
 ```php
 'providers' => [
     // ...
-    Amendozaaguiar\Laravel-lat-es\LaravelLatEsServiceProvider::class,
+    Amendozaaguiar\LaravelLatEs\LaravelLatEsServiceProvider::class,
 ];
 ```
 

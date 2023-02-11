@@ -12,7 +12,7 @@ class InstallLaravelLatEs extends Command
 
     public function handle()
     {
-        Artisan::call('vendor:publish', ['--provider' => 'Amendozaaguiar\Laravel-lat-es\LaravelLatEsServiceProvider']);
+        Artisan::call('vendor:publish', ['--provider' => 'Amendozaaguiar\LaravelLatEs\LaravelLatEsServiceProvider']);
 
         $this->info('Traducciones de Laravel en Español instaladas correctamente.');
     }
