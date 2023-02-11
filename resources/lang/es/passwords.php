@@ -1,6 +1,13 @@
 <?php
 
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Líneas de traducción de restablecimiento de contraseña
+    |--------------------------------------------------------------------------
+    */
+
     'reset'     => '¡Su contraseña ha sido restablecida!',
     'sent'      => '¡Le hemos enviado por correo electrónico el enlace para restablecer su contraseña!',
     'throttled' => 'Por favor espere antes de intentar de nuevo.',

@@ -1,6 +1,13 @@
 <?php
 
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Líneas de idioma de validación
+    |--------------------------------------------------------------------------
+    */
+
     'accepted'             => ':Attribute debe ser aceptado.',
     'accepted_if'          => ':Attribute debe ser aceptado cuando :other sea :value.',
     'active_url'           => ':Attribute no es una URL válida.',
@@ -10,6 +17,7 @@ return [
     'alpha_dash'           => ':Attribute sólo debe contener letras, números, guiones y guiones bajos.',
     'alpha_num'            => ':Attribute sólo debe contener letras y números.',
     'array'                => ':Attribute debe ser un conjunto.',
+    'ascii'                => ':Attribute solo debe contener símbolos y caracteres alfanuméricos de un solo byte.',
     'before'               => ':Attribute debe ser una fecha anterior a :date.',
     'before_or_equal'      => ':Attribute debe ser una fecha anterior o igual a :date.',
     'between'              => [
@@ -24,6 +32,7 @@ return [
     'date'                 => ':Attribute no es una fecha válida.',
     'date_equals'          => ':Attribute debe ser una fecha igual a :date.',
     'date_format'          => ':Attribute no corresponde al formato :format.',
+    'decimal'              => ':Attribute debe tener :decimal lugares decimales.',
     'declined'             => ':Attribute debe ser rechazado.',
     'declined_if'          => ':Attribute debe ser rechazado cuando :other sea :value.',
     'different'            => ':Attribute y :other deben ser diferentes.',
@@ -59,6 +68,7 @@ return [
     'ipv4'                 => ':Attribute debe ser una dirección IPv4 válida.',
     'ipv6'                 => ':Attribute debe ser una dirección IPv6 válida.',
     'json'                 => 'El campo :attribute debe ser una cadena JSON válida.',
+    'lowercase'            => ':Attribute debe estar en minúsculas.',
     'lt'                   => [
         'array'   => 'El campo :attribute debe tener menos de :value elementos.',
         'file'    => 'El campo :attribute debe tener menos de :value kilobytes.',
@@ -88,6 +98,11 @@ return [
         'string'  => ':Attribute debe contener al menos :min caracteres.',
     ],
     'min_digits'           => 'El campo :attribute debe tener al menos :min dígitos.',
+    'missing'              => 'Debe faltar el campo :attribute.',
+    'missing_if'           => 'El campo :attribute debe faltar cuando :other es :value.',
+    'missing_unless'       => 'El campo :attribute debe faltar a menos que :other sea :value.',
+    'missing_with'         => 'El campo :attribute debe faltar cuando :values está presente.',
+    'missing_with_all'     => 'El campo :attribute debe faltar cuando los :values están presentes.',
     'multiple_of'          => 'El campo :attribute debe ser múltiplo de :value',
     'not_in'               => ':Attribute es inválido.',
     'not_regex'            => 'El formato del campo :attribute no es válido.',
@@ -108,6 +123,7 @@ return [
     'required'             => 'El campo :attribute es obligatorio.',
     'required_array_keys'  => 'El campo :attribute debe contener entradas para: :values.',
     'required_if'          => 'El campo :attribute es obligatorio cuando :other es :value.',
+    'required_if_accepted' => 'El campo :attribute es obligatorio cuando se acepta :other.',
     'required_unless'      => 'El campo :attribute es obligatorio a menos que :other esté en :values.',
     'required_with'        => 'El campo :attribute es obligatorio cuando :values está presente.',
     'required_with_all'    => 'El campo :attribute es obligatorio cuando :values están presentes.',
@@ -125,79 +141,38 @@ return [
     'timezone'             => ':Attribute debe ser una zona horaria válida.',
     'unique'               => 'El campo :attribute ya ha sido registrado.',
     'uploaded'             => 'Subir :attribute ha fallado.',
+    'uppercase'            => 'El :attribute debe estar en mayúsculas.',
     'url'                  => ':Attribute debe ser una URL válida.',
+    'ulid'                 => 'El :attribute debe ser un ULID válido.',
     'uuid'                 => 'El campo :attribute debe ser un UUID válido.',
-    'attributes'           => [
-        'address'                  => 'dirección',
-        'age'                      => 'edad',
-        'amount'                   => 'cantidad',
-        'area'                     => 'área',
-        'available'                => 'disponible',
-        'birthday'                 => 'cumpleaños',
-        'body'                     => 'contenido',
-        'city'                     => 'ciudad',
-        'content'                  => 'contenido',
-        'country'                  => 'país',
-        'created_at'               => 'creado el',
-        'creator'                  => 'creador',
-        'current_password'         => 'contraseña actual',
-        'date'                     => 'fecha',
-        'date_of_birth'            => 'fecha de nacimiento',
-        'day'                      => 'día',
-        'deleted_at'               => 'eliminado el',
-        'description'              => 'descripción',
-        'district'                 => 'distrito',
-        'duration'                 => 'duración',
-        'email'                    => 'correo electrónico',
-        'excerpt'                  => 'extracto',
-        'filter'                   => 'filtro',
-        'first_name'               => 'nombre',
-        'gender'                   => 'género',
-        'group'                    => 'grupo',
-        'hour'                     => 'hora',
-        'image'                    => 'imagen',
-        'last_name'                => 'apellido',
-        'lesson'                   => 'lección',
-        'line_address_1'           => 'dirección de la línea 1',
-        'line_address_2'           => 'dirección de la línea 2',
-        'message'                  => 'mensaje',
-        'middle_name'              => 'segundo nombre',
-        'minute'                   => 'minuto',
-        'mobile'                   => 'móvil',
-        'month'                    => 'mes',
-        'name'                     => 'nombre',
-        'national_code'            => 'código nacional',
-        'number'                   => 'número',
-        'password'                 => 'contraseña',
-        'password_confirmation'    => 'confirmación de la contraseña',
-        'phone'                    => 'teléfono',
-        'photo'                    => 'foto',
-        'postal_code'              => 'código postal',
-        'price'                    => 'precio',
-        'province'                 => 'provincia',
-        'recaptcha_response_field' => 'respuesta del recaptcha',
-        'remember'                 => 'recordar',
-        'restored_at'              => 'restaurado el',
-        'result_text_under_image'  => 'texto bajo la imagen',
-        'role'                     => 'rol',
-        'second'                   => 'segundo',
-        'sex'                      => 'sexo',
-        'short_text'               => 'texto corto',
-        'size'                     => 'tamaño',
-        'state'                    => 'estado',
-        'street'                   => 'calle',
-        'student'                  => 'estudiante',
-        'subject'                  => 'asunto',
-        'teacher'                  => 'profesor',
-        'terms'                    => 'términos',
-        'test_description'         => 'descripción de prueba',
-        'test_locale'              => 'prueba local',
-        'test_name'                => 'nombre de prueba',
-        'text'                     => 'texto',
-        'time'                     => 'hora',
-        'title'                    => 'título',
-        'updated_at'               => 'actualizado el',
-        'username'                 => 'usuario',
-        'year'                     => 'año',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap our attribute placeholder
+    | with something more reader friendly such as "E-Mail Address" instead
+    | of "email". This simply helps us make our message more expressive.
+    |
+    */
+
+    'attributes' => [],
 ];
