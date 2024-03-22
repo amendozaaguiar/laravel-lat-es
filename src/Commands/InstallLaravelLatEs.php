@@ -1,13 +1,14 @@
 <?php
 
-namespace Amendozaaguiar\Laravellates\Commands;
+namespace Amendozaaguiar\LaravelLatEs\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
 class InstallLaravelLatEs extends Command
 {
-    protected $signature = 'lates:install';
+    protected $signature = 'laravellates:install';
+
     protected $description = 'Instala los archivos de traducción de Laravel en Español.';
 
     public function handle()

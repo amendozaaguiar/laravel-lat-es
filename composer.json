@@ -1,25 +1,31 @@
 {
     "name": "amendozaaguiar/laravel-lat-es",
-    "description": "Paquete de traducciones en español para Laravel 9, 10. Este paquete te agrega a tu proyecto los ficheros de traducciones en español que Laravel 9, 10 trae por defecto.",
+    "description": "El paquete 'laravel-lat-es' ofrece traducciones en español para Laravel, garantizando que tus proyectos en Laravel tengan archivos de traducción en español por defecto. Con esta integración automática, podrás disfrutar de una experiencia de usuario más fluida y personalizada en tus aplicaciones de Laravel. Al utilizar las traducciones por defecto de Laravel, garantizas la coherencia y consistencia del idioma en toda tu aplicación, lo que mejora la usabilidad y la accesibilidad para tus usuarios hispanohablantes.",
     "keywords": [
         "laravel",
         "español",
-        "traduccion",
-        "spanish",
-        "translation"
+        "traducción",
+        "paquete",
+        "idioma",
+        "localización",
+        "automático",
+        "integración",
+        "desarrollo web",
+        "usabilidad",
+        "experiencia de usuario",
+        "coherencia"
     ],
     "homepage": "https://github.com/amendozaaguiar/laravel-lat-es",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amendozaaguiar\\Laravellates\\": "src/"
+            "Amendozaaguiar\\LaravelLatEs\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Anderson Mendoza",
-            "homepage": "https://amendozaaguiar.dev",
             "role": "Developer"
         }
     ],
@@ -31,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amendozaaguiar\\Laravellates\\LaravelLatEsServiceProvider"
+                "Amendozaaguiar\\LaravelLatEs\\LaravelLatEsServiceProvider"
             ]
         }
     }

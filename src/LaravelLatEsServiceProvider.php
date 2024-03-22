@@ -1,7 +1,8 @@
 <?php
 
-namespace Amendozaaguiar\Laravellates;
+namespace Amendozaaguiar\LaravelLatEs;
 
+use Amendozaaguiar\LaravelLatEs\Commands\InstallLaravelLatEs;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelLatEsServiceProvider extends ServiceProvider
@@ -17,7 +18,7 @@ class LaravelLatEsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Commands\InstallLaravelLatEs::class,
+                InstallLaravelLatEs::class,
             ]);
         }
     }
