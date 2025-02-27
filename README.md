@@ -27,7 +27,6 @@ Puedes instalar este paquete mediante Composer:
 
 ```bash
 composer require amendozaaguiar/laravel-lat-es
-
 ```
 
 No es necesario agregar el proveedor de servicios en tu fichero `config/app.php` en Laravel 5.5+ gracias al [sistema de autodiscovery](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518):
