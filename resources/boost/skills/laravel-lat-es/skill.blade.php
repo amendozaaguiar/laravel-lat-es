@@ -32,6 +32,12 @@ php artisan laravellates:install
 
 # O con vendor:publish directamente
 php artisan vendor:publish --tag=laravel-lat-es-lang
+
+# Verificar que las traducciones están al día
+php artisan laravellates:check
+
+# Verificar otro locale
+php artisan laravellates:check --locale=es_MX
 ```
 
 ## Configurar el idioma en la app
@@ -102,11 +108,29 @@ usa la clave `custom` de `validation.php`:
 ],
 ```
 
-## Comando Artisan
+## Comandos Artisan
+
+| Comando | Descripción |
+|---|---|
+| `php artisan laravellates:install` | Publica los 4 archivos de traducción en `lang/es/` |
+| `php artisan laravellates:check` | Compara `lang/en/` y `lang/es/` y reporta claves faltantes |
+| `php artisan laravellates:check --locale=xx` | Verifica un locale distinto al español |
+
+## Comando `laravellates:check`
+
+Compara los archivos de `lang/en/` (publicados con `php artisan lang:publish`) contra `lang/{locale}/` y reporta:
+- Archivos que faltan en el locale
+- Claves que existen en EN pero no están traducidas
+- Claves extra en el locale que ya no existen en EN (obsoletas)
+
+Devuelve exit code `0` si todo está sincronizado, `1` si hay diferencias. Ideal para CI/CD.
 
 ```bash
-php artisan laravellates:install
+# Verificar español (por defecto)
+php artisan laravellates:check
+
+# Verificar otro locale
+php artisan laravellates:check --locale=es_MX
 ```
-- Publica los 4 archivos de traducción en `lang/es/`
-- El ServiceProvider se auto-registra, no es necesario agregarlo manualmente
-- El tag de publicación es `laravel-lat-es-lang`
+
+Si el AI detecta que el usuario pregunta por claves faltantes, traducciones desactualizadas, o quiere saber si su locale está al día, sugerir este comando.

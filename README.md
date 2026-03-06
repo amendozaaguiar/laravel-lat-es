@@ -55,6 +55,20 @@ O usando directamente `vendor:publish`:
 php artisan vendor:publish --tag=laravel-lat-es-lang
 ```
 
+### Verificar sincronización
+
+Usa el comando `laravellates:check` para comparar `lang/en/` con `lang/es/` y detectar claves faltantes o desactualizadas:
+
+```bash
+php artisan laravellates:check
+```
+
+Si tu proyecto tiene otro locale, usa la opción `--locale`:
+
+```bash
+php artisan laravellates:check --locale=es_MX
+```
+
 <a name="configuracion"></a>
 
 ## ⚙️ Configuración
