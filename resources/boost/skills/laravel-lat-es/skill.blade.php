@@ -133,4 +133,5 @@ php artisan laravellates:check
 php artisan laravellates:check --locale=es_MX
 ```
 
-Si el AI detecta que el usuario pregunta por claves faltantes, traducciones desactualizadas, o quiere saber si su locale está al día, sugerir este comando.
+Si el AI detecta que el usuario pregunta por claves faltantes, traducciones desactualizadas, o quiere saber si su locale
+está al día, sugerir este comando.

@@ -30,8 +30,8 @@ class CheckLaravelLatEs extends Command
             return self::FAILURE;
         }
 
-        $enFiles  = collect(glob("{$enPath}/*.php"))->mapWithKeys(fn ($f) => [basename($f, '.php') => $f]);
-        $esFiles  = collect(glob("{$esPath}/*.php"))->mapWithKeys(fn ($f) => [basename($f, '.php') => $f]);
+        $enFiles  = collect(glob("{$enPath}/*.php"))->mapWithKeys(fn($f) => [basename($f, '.php') => $f]);
+        $esFiles  = collect(glob("{$esPath}/*.php"))->mapWithKeys(fn($f) => [basename($f, '.php') => $f]);
 
         $missingFiles  = $enFiles->keys()->diff($esFiles->keys());
         $orphanFiles   = $esFiles->keys()->diff($enFiles->keys());
@@ -44,7 +44,7 @@ class CheckLaravelLatEs extends Command
             $hasIssues = true;
             $this->newLine();
             $this->line("<fg=red;options=bold>Archivos faltantes en lang/{$locale}/:</>");
-            $missingFiles->each(fn ($file) => $this->line("  <fg=red>✗</> {$file}.php"));
+            $missingFiles->each(fn($file) => $this->line("  <fg=red>✗</> {$file}.php"));
         }
 
         // ── Archivos extra (en locale pero no en en/) ───────────────────────
@@ -52,7 +52,7 @@ class CheckLaravelLatEs extends Command
             $hasIssues = true;
             $this->newLine();
             $this->line("<fg=yellow;options=bold>Archivos en lang/{$locale}/ sin contraparte en lang/en/:</>");
-            $orphanFiles->each(fn ($file) => $this->line("  <fg=yellow>⚠</> {$file}.php"));
+            $orphanFiles->each(fn($file) => $this->line("  <fg=yellow>⚠</> {$file}.php"));
         }
 
         // ── Comparar claves por archivo ──────────────────────────────────────
@@ -72,7 +72,7 @@ class CheckLaravelLatEs extends Command
                 $this->line("<fg=red;options=bold>{$group}.php — " . count($missing) . " clave(s) faltante(s):</>");
                 foreach ($missing as $key => $value) {
                     $this->line("  <fg=red>✗</> {$key}");
-                    $this->line("    <fg=gray>EN:</> {$this->truncate((string) $value)}");
+                    $this->line("    <fg=gray>EN:</> {$this->truncate((string)$value)}");
                 }
             }
 
