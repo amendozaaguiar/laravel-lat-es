@@ -12,9 +12,12 @@ class LaravelLatEsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        $this->publishes([__DIR__ . '/../resources/lang' => base_path('/lang'),], 'lang');
+        $this->publishes(
+            [__DIR__ . '/../resources/lang' => lang_path()],
+            'laravel-lat-es-lang'
+        );
 
         if ($this->app->runningInConsole()) {
             $this->commands([
@@ -28,7 +31,5 @@ class LaravelLatEsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-    }
+    public function register() {}
 }

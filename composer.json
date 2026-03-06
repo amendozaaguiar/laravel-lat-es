@@ -1,28 +1,17 @@
 {
     "name": "amendozaaguiar/laravel-lat-es",
-    "description": "El paquete 'laravel-lat-es' ofrece traducciones en español para Laravel, garantizando que tus proyectos en Laravel tengan archivos de traducción en español por defecto. Con esta integración automática, podrás disfrutar de una experiencia de usuario más fluida y personalizada en tus aplicaciones de Laravel. Al utilizar las traducciones por defecto de Laravel, garantizas la coherencia y consistencia del idioma en toda tu aplicación, lo que mejora la usabilidad y la accesibilidad para tus usuarios hispanohablantes.",
+    "description": "Archivos de traducción al español latinoamericano para Laravel (auth, pagination, passwords, validation).",
     "keywords": [
         "laravel",
         "español",
         "traducción",
-        "paquete",
         "idioma",
         "localización",
-        "automático",
-        "integración",
-        "desarrollo web",
-        "usabilidad",
-        "experiencia de usuario",
-        "coherencia"
+        "latin america"
     ],
     "homepage": "https://github.com/amendozaaguiar/laravel-lat-es",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Amendozaaguiar\\LaravelLatEs\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Anderson Mendoza",
@@ -30,9 +19,32 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
-        "illuminate/support": ">=5.4.0",
-        "illuminate/console": ">=5.4.0"
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amendozaaguiar\\LaravelLatEs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amendozaaguiar\\LaravelLatEs\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
@@ -40,5 +52,7 @@
                 "Amendozaaguiar\\LaravelLatEs\\LaravelLatEsServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }

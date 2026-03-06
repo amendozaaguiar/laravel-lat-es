@@ -3,80 +3,67 @@
 
 # 🌟 Laravel Español 🇪🇸
 
-El paquete "laravel-lat-es" ofrece traducciones en español para Laravel, permitiendo que tus proyectos en Laravel cuenten con los archivos de traducción en español por defecto. Con este paquete, podrás asegurarte de tener una experiencia de usuario en español más fluida y personalizada en tus aplicaciones de Laravel. Además, al utilizar las traducciones por defecto de Laravel, podrás estar seguro de estar utilizando un idioma consistente y coherente a lo largo de toda tu aplicación.
+El paquete `laravel-lat-es` ofrece traducciones al español latinoamericano para Laravel. Incluye los archivos de idioma por defecto de Laravel traducidos, listos para publicar en tu proyecto con un solo comando.
 
-## Versiones
-
-Archivos por defecto incluidos en Laravel:
+## Archivos incluidos
 
 ```
-es/auth.php
-es/pagination.php
-es/passwords.php
-es/validation.php
+lang/es/auth.php
+lang/es/pagination.php
+lang/es/passwords.php
+lang/es/validation.php
 ```
 
+- [Requisitos](#requisitos)
 - [Instalación](#instalar)
+- [Configuración](#configuracion)
 - [Colaborar](#colaborar)
+
+<a name="requisitos"></a>
+
+## 📋 Requisitos
+
+- PHP `^8.2`
+- Laravel `^10.0 | ^11.0 | ^12.0`
 
 <a name="instalar"></a>
 
 ## 🚀 Instalación
 
-Puedes instalar este paquete mediante Composer:
+Instala el paquete via Composer:
 
 ```bash
 composer require amendozaaguiar/laravel-lat-es
 ```
 
-No es necesario agregar el proveedor de servicios en tu fichero `config/app.php` en Laravel 5.5+ gracias al [sistema de autodiscovery](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518):
+El `ServiceProvider` se registra automáticamente gracias al [autodiscovery de Laravel](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518), no es necesario registrarlo manualmente.
 
-```php
-'providers' => [
-    // ...
-    Amendozaaguiar\LaravelLatEs\LaravelLatEsServiceProvider::class,
-];
-```
-
-Ahora simplemente necesitamos actualizar las traducciones que lo haremos con el siguiente comando:
-
-```bash
-php artisan vendor:publish --tag=lang
-```
-
-O también podramos usar:
+Publica los archivos de traducción con el comando del paquete:
 
 ```bash
 php artisan laravellates:install
 ```
 
-Déspues de todos estos pasos, ya tenemos disponible nuestras traducciones en español, y solo necesitamos configurar Laravel para que use el idioma deseado.
+O usando directamente `vendor:publish`:
 
-Esto lo podemos hacer modificando el parámetro `locale` de la configuración de Laravel en `config/app.php`:
-
-```
-// Ej: español
-'locale'          => 'es',
-
-// Ej: inglés
-'locale'          => 'en',
+```bash
+php artisan vendor:publish --tag=laravel-lat-es-lang
 ```
 
-Se puede ser mas concreto e indicar las variaciones de un lenguaje:
+<a name="configuracion"></a>
 
+## ⚙️ Configuración
+
+Establece el idioma en `config/app.php`:
+
+```php
+'locale' => 'es', // español
+'locale' => 'en', // inglés
 ```
-// Inglés americano
-'locale' => 'en_US'
 
-// Portugués de Portugal
-'locale' => 'pt_PT'
-```
+También puedes cambiarlo en tiempo de ejecución (solo para esa petición):
 
-Pero en este caso nos valdrá con un español internacional para todos.
-
-También se puede cambiar el idioma en tiempo de ejecución utilizando el método `setLocale` de `App`. Este cambio no es permanente, en la siguiente ejecución se utilizará el valor de configuración por defecto:
-
-```
+```php
 App::setLocale('es');
 ```
 
@@ -84,8 +71,8 @@ App::setLocale('es');
 
 ## 🤝 Colaborar
 
-Estamos abiertos a mejoras y variaciones para países de habla hispana. ¡Aceptamos cualquier contribución a través de una solicitud de extracción (Pull-Request) con entusiasmo! 😊
+Estamos abiertos a mejoras y variaciones para países de habla hispana. ¡Aceptamos cualquier contribución a través de un Pull Request con entusiasmo! 😊
 
 ## Inspirado
 
-Agradecemos la inspiración de Laravel-Spanish y agradecemos a ChatGPT por su contribución en la mejora de los textos.
+Agradecemos la inspiración de Laravel-Spanish y a ChatGPT por su contribución en la mejora de los textos.
