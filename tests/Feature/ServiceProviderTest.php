@@ -4,6 +4,13 @@ use Amendozaaguiar\LaravelLatEs\LaravelLatEsServiceProvider;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\Yaml\Yaml;
+use Illuminate\Support\Facades\File;
+
+
+beforeEach(function () {
+    File::deleteDirectory(lang_path('en'));
+    File::deleteDirectory(lang_path('es'));
+});
 
 // ─── ServiceProvider ─────────────────────────────────────────────────────────
 
@@ -97,4 +104,9 @@ it('la skill documenta los cuatro archivos de traducción', function () {
 it('la skill documenta el uso del helper __()', function () {
     $content = file_get_contents(__DIR__ . '/../../resources/boost/skills/laravel-lat-es/skill.blade.php');
     expect($content)->toContain("__('");
+});
+
+afterEach(function () {
+    File::deleteDirectory(lang_path('en'));
+    File::deleteDirectory(lang_path('es'));
 });
