@@ -2,7 +2,7 @@
 [![Descargas Totales](https://img.shields.io/packagist/dt/amendozaaguiar/laravel-lat-es.svg?style=flat-square)](https://packagist.org/packages/amendozaaguiar/laravel-lat-es)
 [![Tests](https://img.shields.io/github/actions/workflow/status/amendozaaguiar/laravel-lat-es/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/amendozaaguiar/laravel-lat-es/actions/workflows/tests.yml)
 [![PHP](https://img.shields.io/packagist/dependency-v/amendozaaguiar/laravel-lat-es/php?style=flat-square&logo=php&logoColor=white)](https://packagist.org/packages/amendozaaguiar/laravel-lat-es)
-[![Laravel](https://img.shields.io/badge/Laravel-10%20|%2011%20|%2012-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-10%20|%2011%20|%2012%20|%2013-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
 [![Licencia](https://img.shields.io/packagist/l/amendozaaguiar/laravel-lat-es.svg?style=flat-square)](LICENSE)
 
 # 🌟 Laravel Español 🇪🇸
