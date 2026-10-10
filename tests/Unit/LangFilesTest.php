@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Arr;
 
-$langPath = __DIR__ . '/../../resources/lang/es';
+$langPath = __DIR__.'/../../resources/lang/es';
 
 // ─── Archivos existen ────────────────────────────────────────────────────────
 
@@ -64,7 +64,7 @@ it('passwords.php tiene las claves reset, sent, throttled, token y user', functi
 it('validation.php tiene las claves requeridas', function () use ($langPath) {
     $data = require "{$langPath}/validation.php";
 
-    $required = ['required', 'email', 'min', 'max', 'unique', 'confirmed', 'string', 'custom', 'attributes'];
+    $required = ['required', 'email', 'min', 'max', 'unique', 'confirmed', 'string', 'array_keys', 'base64', 'custom', 'attributes'];
 
     foreach ($required as $key) {
         expect(Arr::has($data, $key))->toBeTrue("Falta la clave '{$key}' en validation.php");

@@ -23,7 +23,9 @@ return [
     'alpha_num' => 'El campo :attribute debe contener solo letras y números.',
     'any_of' => 'El campo :attribute es inválido.',
     'array' => 'El campo :attribute debe ser un array.',
+    'array_keys' => 'El campo :attribute solo debe contener las siguientes claves: :values.',
     'ascii' => 'El campo :attribute debe contener solo caracteres alfanuméricos de un solo byte y símbolos.',
+    'base64' => 'El campo :attribute debe ser una cadena Base64 válida.',
     'before' => 'El campo :attribute debe ser una fecha anterior a :date.',
     'before_or_equal' => 'El campo :attribute debe ser una fecha anterior o igual a :date.',
     'between' => [

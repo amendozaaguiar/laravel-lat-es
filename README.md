@@ -29,7 +29,7 @@ lang/es/validation.php
 ## 📋 Requisitos
 
 - PHP `^8.2`
-- Laravel `^10.0 | ^11.0 | ^12.0`
+- Laravel `^10.0 | ^11.0 | ^12.0 | ^13.0`
 
 <a name="instalar"></a>
 
